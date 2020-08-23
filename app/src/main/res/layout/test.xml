@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/titlepage"
+        android:layout_width="wrap_content"
+        android:layout_height="420dp"
+        android:src="@drawable/picstatistic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="228dp"
+        android:text="No pain \n NO gain"
+
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bgprogress"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/bgprogress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#161C3E"
+        app:layout_constraintStart_toEndOf="parent"
+        tools:layout_editor_absoluteY="678dp" />
+
+    <View
+
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:background="#FEBFAB"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="678dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
